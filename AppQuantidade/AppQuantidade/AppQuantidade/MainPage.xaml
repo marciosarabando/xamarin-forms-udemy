@@ -3,10 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppQuantidade.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+    <StackLayout Spacing="30">
+        <Frame BackgroundColor="#0052cc" Padding="24" CornerRadius="0">
+            <Label Text="LAB VITREO" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
+        
+        <!--
         <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
         <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
         <Label FontSize="16" Padding="30,24,30,0">
@@ -19,6 +21,32 @@
                 </FormattedString>
             </Label.FormattedText>
         </Label>
+        -->
+        <Label Text="Boas vindas, Leo!" FontSize="25" HorizontalTextAlignment="Center"></Label>
+        
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="60">
+            <Label Text="Aporte Inicial" FontSize="20" HorizontalTextAlignment="Center"></Label>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label x:Name="lbl_quantidade" Text="1" FontSize="48" TextColor="blue" HorizontalTextAlignment="Center"></Label>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" Spacing="40">
+                <Button Clicked="btnMais_Clicked" Text="+" FontSize="48" BackgroundColor="White" BorderWidth="1" BorderColor="#707070" TextColor="#707070" WidthRequest="90" HeightRequest="90"></Button>
+                <Button Clicked="btnMenos_Clicked" Text="-" FontSize="48" BackgroundColor="White" BorderWidth="1" BorderColor="#707070" TextColor="#707070" WidthRequest="90" HeightRequest="90"></Button>
+            </StackLayout>
+        </StackLayout>
+
+
+        <StackLayout Spacing="80">
+            <Frame BackgroundColor="#0052cc" Padding="24" CornerRadius="0">
+                <Label Text="Laboratório de Estudos: Marcio Sarabando" HorizontalTextAlignment="Center" TextColor="White" FontSize="15"/>
+            </Frame>
+        </StackLayout>
+
+
+
+
     </StackLayout>
 
 </ContentPage>
